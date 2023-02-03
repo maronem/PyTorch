@@ -23,3 +23,29 @@ We created our first model and ran our training data through 100 epochs, followi
 | Weight   |           0.7     |     0.06     |      0.62     |
 | Bias     |           0.3     |     0.43      |     0.33     |
 | Loss   |              -      |     0.36      |     0.02      |
+
+### 2/2/23
+
+We built our first model which is a linear regression model where we started with random values for our two parameters (weight & bias). Since we are subclassing `nn.module` in our model, we used the `forward()` method to define the computation to be performed in our model.
+
+```
+from torch import nn
+
+# Create linear regression model
+class LinearRegressionModel(nn.Module): #almost everything in PyTorch inherets from nn.module subclass
+  def __init__(self):
+    super().__init__()
+
+    # Initialize the model parameters to be used in compuations
+    self.weights = nn.Parameter(torch.randn(1, #nn.Parameter stores tensors that can be used with nn.Module
+                                            requires_grad=True, #used for updating model parameters via gradient descent
+                                            dtype=torch.float))
+    self.bias = nn.Parameter(torch.randn(1,
+                                        requires_grad=True,
+                                        dtype=torch.float))
+    
+  # forward() defines the compuation in the model and is required when calling nn.Module subclass
+  # this defines the compuation that takes place on the data passed to the particular nn.Module
+  def forward(self, x: torch.Tensor) -> torch.Tensor: # <- "x" is the input data 
+    return self.weights * x + self.bias #this is the linear regression formula
+```
