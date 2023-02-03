@@ -18,7 +18,7 @@ We created our first model and ran our training data through 100 epochs, followi
 | <img width="379" alt="Screen Shot 2023-02-03 at 1 06 04 PM" src="https://user-images.githubusercontent.com/108199140/216676155-d9be7312-1e6f-4eaa-be8f-1b4fd5ca8553.png"> | <img width="376" alt="Screen Shot 2023-02-03 at 1 06 13 PM" src="https://user-images.githubusercontent.com/108199140/216676218-c4912c35-063e-4885-8848-f1df4dfb3927.png"> |
 
 #### Changes in Weight, Bias, and Loss 
-| Value     |    Ideal    |  10 Epoch     | 100 Epochs |
+| Value     |    Ideal    |  10 Epochs     | 100 Epochs |
 | ---         |       ----     |   ---     |     --- |
 | Weight   |           0.7     |     0.06     |      0.62     |
 | Bias     |           0.3     |     0.43      |     0.33     |
