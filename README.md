@@ -3,13 +3,15 @@ Learning PyTorch for deep learning
 
 ### PyTorch course information
 
-I am currently working through a Youtube PyTorch course to learn how to use PyTorch for deep learning. This course follows the instruction of Daniel Bourke and teaches all the fundamentals of what tensors are, how they work, how to create them, how to manipulate them, and of course using PyTorch for different neural network types.
+I am currently working through a Youtube PyTorch course to learn how to use PyTorch for deep learning. This course follows the instruction of Mr.Daniel Bourke and teaches all the fundamentals of what tensors are, how they work, how to create them, how to manipulate them, and of course using PyTorch for different neural network types.
 
 Course Link: https://www.youtube.com/watch?v=Z_ikDlimN6A 
 
 I will be using this repository to track my progress throughout the course as I dive into my PyTorch journey!
 
 ### 2/3/23
+
+#### Building and running a PyTorch training loop
 
 We created our first model and ran our training data through 100 epochs, following training you can see the predicted values are much closer to the ideal values, the loss decreased, and the weight/bias values became closer to the weight and bias we set to generate our data!
 
@@ -25,6 +27,22 @@ We created our first model and ran our training data through 100 epochs, followi
 | Loss   |              -      |     0.36      |     0.02      |
 
 ### 2/2/23
+
+#### Setup model training
+
+To begin training our model, we set up our loss function and optimizer. As we are running a linear regression, we chose `nn.L1Loss()` for our loss function which calculates the mean absolute error (MAE) between our predicted and actual values. For our optimizer, we chose `torch.optim.SGD()` or Stochastic Gradient Descent (SGD).
+
+```
+# Setup a loss function
+loss_fn = nn.L1Loss()
+
+# Setup an optimizer (stochastic gradient descent)
+  # Learning rate value will adjust parameters to the same power
+optimizer = torch.optim.SGD(model_0.parameters(),
+                            lr=0.01) # lr = learning rate = possibly most important hyperparameter you can set
+```
+
+#### Building our Linear Regression Model
 
 We built our first model which is a linear regression model where we started with random values for our two parameters (weight & bias). Since we are subclassing `nn.module` in our model, we used the `forward()` method to define the computation to be performed in our model.
 
