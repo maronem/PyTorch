@@ -9,7 +9,7 @@ Course Link: https://www.youtube.com/watch?v=Z_ikDlimN6A
 
 I will be using this repository to track my progress throughout the course as I dive into my PyTorch journey!
 
-### 2/6/23
+### Update 2
 
 Following training our model using the training data, we put our model in testing mode using `model.eval()` and used our testing data to make predictions. Additionally, to improve our loss value, we ran our model for an additional 100 epochs (200 epochs total) compared to the first run. 
 
@@ -40,7 +40,7 @@ After running our model on the test data, we saw vast improvement of the test lo
 | ![losscurve](https://user-images.githubusercontent.com/108199140/217107701-5b48235e-5c2e-433b-83d8-55f151d3fed4.PNG) | ![testpreds](https://user-images.githubusercontent.com/108199140/217107716-c04f7046-8009-4e33-93db-d400728eeabe.PNG) |
 
 
-### 2/3/23
+### Update 1
 
 #### Building and running a PyTorch training loop
 
