@@ -27,9 +27,9 @@ We timed, trained, and evaluated each of the models described above and compared
 | ------------------- | ------------------------- | 
 | <img width="497" alt="Screen Shot 2023-04-11 at 10 29 06 AM" src="https://user-images.githubusercontent.com/108199140/231195632-8680cbf2-e6ac-4199-a6ad-8a451f469a12.png"> | <img width="697" alt="Screen Shot 2023-04-11 at 10 29 21 AM" src="https://user-images.githubusercontent.com/108199140/231195679-df4a7e82-6b20-49ce-9867-b7ad62073d9d.png"> | 
 
+### Neural Network Classification
 
-
-### Update 2
+#### Update 2
 
 Following training our model using the training data, we put our model in testing mode using `model.eval()` and used our testing data to make predictions. Additionally, to improve our loss value, we ran our model for an additional 100 epochs (200 epochs total) compared to the first run. 
 
@@ -60,7 +60,7 @@ After running our model on the test data, we saw vast improvement of the test lo
 | ![losscurve](https://user-images.githubusercontent.com/108199140/217107701-5b48235e-5c2e-433b-83d8-55f151d3fed4.PNG) | ![testpreds](https://user-images.githubusercontent.com/108199140/217107716-c04f7046-8009-4e33-93db-d400728eeabe.PNG) |
 
 
-### Update 1
+#### Update 1
 
 #### Building and running a PyTorch training loop
 
